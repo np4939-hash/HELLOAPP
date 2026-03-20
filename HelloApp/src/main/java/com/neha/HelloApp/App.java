@@ -5,11 +5,20 @@ package com.neha.HelloApp;
  */
 public class App {
     public static void main(String[] args) {
-        // Step 1: Check if the user passed a name via command-line arguments
-        // Step 2: Use "World" as a fallback if the array is empty
-        String name = (args.length > 0) ? args[0] : "World";
 
-        // Step 3: Display the personalized greeting
-        System.out.println("Hello " + name + "!");
+        if (args.length == 0) {
+            System.out.println("Hello World");
+        } else {
+            System.out.print("Hello ");
+
+            for (int i = 0; i < args.length; i++) {
+                System.out.print(args[i]);
+
+                // Add comma except for last name
+                if (i < args.length - 1) {
+                    System.out.print(", ");
+                }
+            }
+        }
     }
 }
