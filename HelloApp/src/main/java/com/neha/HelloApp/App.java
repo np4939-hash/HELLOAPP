@@ -5,6 +5,7 @@ package com.neha.HelloApp;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hello App UC1");
+        System.out.println("Hello App UC2");
     }
 }
